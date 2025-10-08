@@ -6,6 +6,7 @@ use App\Models\Student;
 use App\Models\User;
 use App\Models\Guardian;
 use App\Models\Classroom;
+use App\Models\Teacher;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -28,5 +29,7 @@ class DatabaseSeeder extends Seeder
         Classroom::factory(4)
             ->hasStudent(5)
             ->create();
+
+        Teacher::factory(5)->create();
     }
 }
